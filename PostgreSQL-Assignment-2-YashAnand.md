@@ -29,7 +29,7 @@ ________________________________________________________________________________
 
 In an RDBMS or Relational Database Management System, the data is organised into tables with rows and columns - like it is done in a spreadsheet. The data entered in a row of the table would be associated with its respective column's header, making the data more structured and tidy. The main component of an RDBMS therefore consists of its capability of inputting data as tables and also allowing data interaction and management based on the relationship between the tables. 
 
-For better understanding, lets assume there is a soft-drink refrigerator which stores different drinks. However, the manager of the store that this fridge is set up in, wishes to efficiently manage information related to the various soft drinks such as:
+For better understanding, lets assume there is a soft-drink refrigerator which stores different drinks. However, the manager of the store that this fridge is set up in, wishes to efficiently manage data related to the various soft drinks such as:
 - Name of all the soft-drink brands
 - Details related to supplier of the soft-drinks
 
