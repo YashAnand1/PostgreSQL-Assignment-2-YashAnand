@@ -14,28 +14,35 @@ In order to do so, he could utilise an RDBMS to help him store and manage data i
 
 --------
 
-What is ACID, Explain with example.
+## What is ACID, Explain with example.
 
-ACID Compliance in the context of databases stands for Atomicity, Consistency, Isolation and Durability. Atomicity: Think of atomicity as a magic wand. When you use it, all the steps to make the cake happen together, like magic. If anything goes wrong, the magic wand waves and everything goes back to how it was before you started. So, you either have a perfect cake, or you don't have a cake at all.
+ACID Compliance in the context of databases stands for Atomicity, Consistency, Isolation and Durability. These 4 components help with a stronger reliablility and integrity of data transactions, which is a logical unit of work done using database operations such as inserting, deleting or updating data. The components of ACID Compliance can therefore be understood better in the following way:
 
-Consistency: This is like a cake recipe that never changes. When you follow the recipe, you expect your cake to taste the same every time. ACID ensures that your cake recipe is consistent, so you don't accidentally add chili powder instead of sugar.
+### Atomicity 
+According to this property, the entire transaction is either complete or none of it is. A transaction in this case works as a single unit and cannot be divided into sub-transactions, meaning that either the entire process of data interaction is going to succeed or the entire operation would be aborted and rolled back to the previous state. 
 
-Isolation: Imagine you're baking your cake in a busy kitchen with other people. Isolation makes sure that no one messes with your ingredients or your cake while you're baking. Your cake stays safe and separate from others' cooking adventures.
+An example of such a case would be when an online transaction of money is done using PhonePay. As per the atomicty of a database, if any part of this process fails after the deduction from the sender's account but before the transfer to recipient's account, then the entire transaction is to be rolled back so that the sender does not lose their money.
 
-Durability: Once you've baked your cake and it's perfect, durability means it's safe for the long haul. Even if your kitchen has a power outage or a tornado, your cake will stay exactly as you left it—delicious and ready to eat.
+### Consistency
+The property of Consitency ensures that the data is always available in a consistent state and that the rules set for data interaction, are not being violated during transactions. What this means is that the stored data is to remain reliable and as near accurate as possible. Going back to the previous example of making transactions using PhonePay, such a rule of consistency is that the sender would only be allowed to enter positive digits, when requesting transfer of money. Adding such constraints help keep the data remain in a reliable state. 
 
-So, in simple terms, ACID is like a magical recipe for making cakes (or any important task), where everything happens together (atomicity), the taste is always consistent (consistency), your cake stays safe from others' meddling (isolation), and it lasts forever, no matter what (durability). It helps keep important things in your database just right, like a perfectly baked cake!
+### Isolation
+According to the rule of Isolation, when operations are performed on the data through multiple transactions from multiple users, the transactions are carried out separately without affecting the other transactions. What this means is that if 2 operations are done on the same data then only one transaction would succeed and that the operation made slightly after would fail. For example, if a seat is being booked for a movie on [BookMyShow](www.bookmyshow.com) then multiple people would not be able to book the same seat and only the transaction that was done first would succeed. Isolation therefore ensures that multiple transactions do not mess up eachother's operations.
 
-Explain RDBMS vs DBMS.
+### Durability
+The durability property states that once a transaction has been carried out, then the data and the operations made would remain in a permanent state. Going back to the previous example of booking a seat for a movie using BookMyShow, the property of durability would ensure that once the transaction or the booking has been made, all the bookings would remain intact even after a server-failure at BookMyShow. Once the transaction has been done, it cannot be undone accidentally until and unless a request is made for it. 
+
+## Explain RDBMS vs DBMS.
+
+As stated before, a Relational Database Management System is a 
+
+RDBMS on the other hand is a type of DBMS, as the name suggest it deals with relations as well as various key constraints. So here we have tables which is called as schema and we have rows which are called as tuples. It also aids in the reduction of data redundancy and the preservation of database integrity. Relational Database Management System is an advanced version of a DBMS. 
 
 Why DBMS Required?
 Database management system, as the name suggest, is a management system which is used to manage the entire flow of data, i.e, insertion of data or the retrieval of data, how the data is inserted into the database or how fast the data should be retrieved, so DBMS takes care of all these features, as it maintains the uniformity of the database as well does the faster insertions as well as retrievals.
 
 Why RDBMS Required?
-RDBMS on the other hand is a type of DBMS, as the name suggest it deals with relations as well as various key constraints. So here we have tables which is called as schema and we have rows which are called as tuples. It also aids in the reduction of data redundancy and the preservation of database integrity.
 
-Relational Database Management System is an advanced version of a DBMS. 
- 
 
 DBMS	RDBMS
 DBMS stores data as file.	RDBMS stores data in tabular form.
