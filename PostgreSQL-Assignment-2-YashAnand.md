@@ -1,7 +1,7 @@
 <div align="center">
 
-# Assignment: PostgresSQL Session-2        
-### — Question & Answers —    
+# PostgresSQL Session-2        
+### — Assignment Document —    
 
 _____________________________________________________________________________________                        
 
