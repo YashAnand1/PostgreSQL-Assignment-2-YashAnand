@@ -1,4 +1,4 @@
-## Understanding RDBMS
+## What Is RDBMS?
 
 In an RDBMS or Relational Database Management System, the data is organised into tables with rows and columns - like it is done in a spreadsheet. The data entered in a row of the table would be associated with its respective column's header, making the data more structured and tidy. The main component of an RDBMS therefore consists of its capability of inputting data as tables and also allowing data interaction and management based on the relationship between the tables. 
 
@@ -16,7 +16,7 @@ In order to do so, he could utilise an RDBMS to help him store and manage data i
 
 --------
 
-## Understanding ACID
+## What Is ACID?
 
 ACID Compliance in the context of databases stands for Atomicity, Consistency, Isolation and Durability. These 4 components help with a stronger reliablility and integrity of data transactions, which is a logical unit of work done using database operations such as inserting, deleting or updating data. The components of ACID Compliance can therefore be understood better in the following way:
 
@@ -53,15 +53,15 @@ Some of the key features and difference of and between RDBMS and DBMS are as fol
 | 10 | Ideal for applications with structured data | Ideal for simpler storage needs |
 | 11 | Example: PostgreSQL, MySQL, Oracle, etc. | Example: XML, Forxpro, Window Registry, etc. |
 
-## Primary Vs Foreign Keys
+## What Are Primary & Foreign Keys
 When it comes to maintaining a relationship between tables and uniquely identifying the data from a table, foreign key and primary keys, respectively can help us greatly in a Relational Database Management System. It should be noted that the primary key of one table is a foreign key to an another table, when it comes to forming relations of tables.
 
-In order to better understand Primary and Foreign keys, we can take the example of the 2 tables created for storing soft-drink related data in the first section of 'Understanding RDBMS'. For reference, the 2 tables that had been created are as follows:
+In order to better understand Primary and Foreign keys, we can take the example of the 2 tables created for storing soft-drink related data in the first section of 'What Is RDBMS'. For reference, the 2 tables that had been created are as follows:
 
-**Primary Keys**
+**Primary Keys**       
 In the above example, while 'Brand_ID' is a primary key for the 'Brands' table, 'Supplier_ID' is the primary key for the 'Suppliers' table. The main idea behind adding a primary key to tables is that they help ensure that the data related to different attributes or column, is always unique for each row. This uniqueness helps the process of data interaction immensely as all of the rows are allowed to be treated as an individual data inside the table. In the 2 tables that have been provided above, primary keys help uniquely identify the brands and suppliers from the 2 tables. 
 
-**Foreign Keys**
+**Foreign Keys**          
 However, it is worth noting that in the 'Suppliers' table, the primary keys of the 'Brands' table are added as a column, which allows them to be treated as a foreign key in the 'Suppliers' table. Since the primary key of one table is the foreign key of another, adding the primary key of one table to another helps create a relation between these 2 tables and making sense of its data became easier. Therefore, a foreign key is a column (or a group of columns) that help create a relation between data in multiple tables. 
 
 In conclusion, Primary Keys help with uniquely identifying a row in the table and when they are added to another table, they become Foreign Keys and help form relations between the table that they have been added to and the table that they originally belonged to.
