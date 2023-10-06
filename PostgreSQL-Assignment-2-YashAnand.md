@@ -87,7 +87,8 @@ Some of the key features and difference of and between RDBMS and DBMS are as fol
    
 ## What Are Primary & Foreign Keys?
 </div>
-When it comes to maintaining a relationship between tables and uniquely identifying the data from a table, foreign key and primary keys, respectively can help us greatly in a Relational Database Management System. It should be noted that the primary key of one table is a foreign key to an another table, when it comes to forming relations of tables.          
+When it comes to maintaining a relationship between tables and uniquely identifying the data from a table, foreign key and primary keys, respectively can help us greatly in a Relational Database Management System. It should be noted that the primary key of one table is a foreign key to an another table, when it comes to forming relations of tables.                             
+
 
 To understand better, lets assume that 2 tables called 'Brands' and 'Suppliers' have been created with 'Brand_ID' and 'Supplier_ID' as the primary keys. Additionally, the 'Suppliers' table will be containing the 'Brand_ID' from the 'Brands' table. 
 
@@ -105,7 +106,8 @@ In conclusion, Primary Keys help with uniquely identifying a row in the table an
    
 ## What is Indexing?
 </div>
-Indexing can be explained as an organised reference or shortcut that allows the DBMS to locate specific rows of data without having to scan the entire table. In order to better understand this, lets first take an example of an Index of a book. In such an Index, chapters/sections are associated with a specific page number on which they can be found. For this, One needs to simply go through the list of mentioned chapters/sections and check which page number is written in front of them.             
+Indexing can be explained as an organised reference or shortcut that allows the DBMS to locate specific rows of data without having to scan the entire table. In order to better understand this, lets first take an example of an Index of a book. In such an Index, chapters/sections are associated with a specific page number on which they can be found. For this, One needs to simply go through the list of mentioned chapters/sections and check which page number is written in front of them.                                         
+
 
 The Indexing in a DBMS works in a very similar way. In the context of a DBMS, an Index stores references to specific rows in a table based on the values in a column or various columns. The positives of Indexing therefore include faster data-retrieval operations and an efficient way to access the data. The negatives however mostly consists of the extra space taken by an index as well as the extra time taken to update and maintain an Index.
 
