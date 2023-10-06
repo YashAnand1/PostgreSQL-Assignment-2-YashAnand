@@ -13,7 +13,7 @@ ________________________________________________________________________________
 What is RDBMS?                  
 What Is ACID?                      
 RDBMS vs DBMS?                        
-What Are Primary & Foreign Keys?
+What Are Primary & Foreign Keys?         
 What is Indexing & Its Common Types?
 
 <center>      
