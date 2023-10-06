@@ -1,22 +1,50 @@
+<div align="center">
+
+# Assignment: PostgresSQL Session-2        
+### — Question & Answers —    
+
+_____________________________________________________________________________________                        
+
+#### <u>Questions To Be Answered</u>  
+
+</div>
+<center>
+
+What is RDBMS?                  
+What Is ACID?                      
+RDBMS vs DBMS?                        
+What Are Primary & Foreign Keys?
+What is Indexing & Its Common Types?
+
+<center>      
+
+_____________________________________________________________________________________      
+
+</center>
+   
+
+<center>
+
+## Understanding & Setting-Up PostgreSQL
+
+</center>
+
 ## What Is RDBMS?
 
 In an RDBMS or Relational Database Management System, the data is organised into tables with rows and columns - like it is done in a spreadsheet. The data entered in a row of the table would be associated with its respective column's header, making the data more structured and tidy. The main component of an RDBMS therefore consists of its capability of inputting data as tables and also allowing data interaction and management based on the relationship between the tables. 
 
-In order to better explain this, let's take an example of a 'Soft-Drink refrigerator' as the one that has been displayed below.
-
-![image]()
 
 Lets assume that the manager of the store that this fridge is set up in, wishes to efficiently manage information related to the various soft drinks such as:
 - Name of all the soft-drink brands
 - Details related to supplier of the soft-drinks
 
-In order to do so, he could utilise an RDBMS to help him store and manage data in the form of various tables. This could be done by creating one table called "Brand_Names" and another called "Supplier_Details", and populating the related data into these tables. However, in order to check which supplier is in charge of supplying a specific soft-drink, a relation could be easily formed between the 2 tables for relating different brands with their suppliers, in the following way:
-
-<will be attaching video or screenshot or plantuml diagram>
+In order to do so, he could utilise an RDBMS to help him store and manage data in the form of various tables. This could be done by creating one table called "Brands" and another called "Suppliers", and populating the related data into these tables. However, in order to check which supplier is in charge of supplying a specific soft-drink, a relation could be formed between the 2 tables for relating different brands with their suppliers, using the concept of foreign keys in the "Suppliers" table.
 
 --------
+<center>
 
 ## What Is ACID?
+</center>
 
 ACID Compliance in the context of databases stands for Atomicity, Consistency, Isolation and Durability. These 4 components help with a stronger reliablility and integrity of data transactions, which is a logical unit of work done using database operations such as inserting, deleting or updating data. The components of ACID Compliance can therefore be understood better in the following way:
 
@@ -33,6 +61,8 @@ According to the rule of Isolation, when operations are performed on the data th
 
 ### Durability
 The durability property states that once a transaction has been carried out, then the data and the operations made would remain in a permanent state. Going back to the previous example of booking a seat for a movie using BookMyShow, the property of durability would ensure that once the transaction or the booking has been made, all the bookings would remain intact even after a server-failure at BookMyShow. Once the transaction has been done, it cannot be undone accidentally until and unless a request is made for it. 
+
+--------
 
 ## RDBMS vs DBMS
 
@@ -53,7 +83,9 @@ Some of the key features and difference of and between RDBMS and DBMS are as fol
 | 10 | Ideal for applications with structured data | Ideal for simpler storage needs |
 | 11 | Example: PostgreSQL, MySQL, Oracle, etc. | Example: XML, Forxpro, Window Registry, etc. |
 
-## What Are Primary & Foreign Keys
+--------
+
+## What Are Primary & Foreign Keys?
 When it comes to maintaining a relationship between tables and uniquely identifying the data from a table, foreign key and primary keys, respectively can help us greatly in a Relational Database Management System. It should be noted that the primary key of one table is a foreign key to an another table, when it comes to forming relations of tables.
 
 In order to better understand Primary and Foreign keys, we can take the example of the 2 tables created for storing soft-drink related data in the first section of 'What Is RDBMS'. For reference, the 2 tables that had been created are as follows:
@@ -66,4 +98,14 @@ However, it is worth noting that in the 'Suppliers' table, the primary keys of t
 
 In conclusion, Primary Keys help with uniquely identifying a row in the table and when they are added to another table, they become Foreign Keys and help form relations between the table that they have been added to and the table that they originally belonged to.
 
-What is Indexing, Common indexing types. Explain with Example.
+--------
+## What is Indexing?
+Indexing can be explained as an organised reference or shortcut that allows the DBMS to locate specific rows of data without having to scan the entire table. In order to better understand this, lets first take an example of an Index of a book. In such an Index, chapters/sections are associated with a specific page number on which they can be found. For this, One needs to simply go through the list of mentioned chapters/sections and check which page number is written in front of them.
+
+The Indexing in a DBMS works in a very similar way. In the context of a DBMS, an Index stores references to specific rows in a table based on the values in a column or various columns. The positives of Indexing therefore include faster data-retrieval operations and an efficient way to access the data. The negatives however mostly consists of the extra space taken by an index as well as the extra time taken to update and maintain an Index.
+
+Some of the most common Indexing types are as follows:
+- **B-Tree Map Index**: The main feature of such as Indexing type is that it speeds up queries which involve conditions related to equality and range. An example of an equality codition can be 'WHERE column = value and an example of an range conditions can be 'WHERE column BETWEEN x AND y'.
+- **Unique Index**: Such an Indexing type helps ensuring that the values of the indexed columns remain unique across all rows in the table, preventing duplicate entries and possible redundancy. A use case for such an Indexing type can be creating a unique index column to remove duplicacy.
+- **Bitmap Index**: Such types are are efficient for columns with a low number of distinct values and help when the queries involve multiple columns. For example, such Indexes represent each value in the index as a bitmap, meaning that each Bit would be associated with a row in the table. For example, the queries involving the usage of AND, OR, or NOT operations can be solved using this form of Indexing.
+--------
