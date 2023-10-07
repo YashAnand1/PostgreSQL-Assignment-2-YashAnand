@@ -10,7 +10,7 @@ ________________________________________________________________________________
 </div>
 <center>
 
-[What is RDBMS?](#What Is RDBMS?)                  
+[What is RDBMS?](#rdbms?)                  
 What Is ACID?                      
 RDBMS vs DBMS?                        
 What Are Primary & Foreign Keys?         
@@ -24,7 +24,7 @@ ________________________________________________________________________________
    
 <div align="center">
    
-## What Is RDBMS?
+## What Is RDBMS? <a name="rdbms"></a>
 </div>
 
 In an RDBMS or Relational Database Management System, the data is organised into tables with rows and columns - like it is done in a spreadsheet. The data entered in a row of the table would be associated with its respective column's header, making the data more structured and tidy. The main component of an RDBMS therefore consists of its capability of inputting data as tables and also allowing data interaction and management based on the relationship between the tables. 
