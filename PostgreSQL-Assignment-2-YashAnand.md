@@ -14,7 +14,7 @@ ________________________________________________________________________________
 What Is ACID?                      
 RDBMS vs DBMS?                        
 What Are Primary & Foreign Keys?         
-What is Indexing & Its Common Types?
+[What is Indexing & Its Common Types?](#indexing)
 
 <center>      
 
