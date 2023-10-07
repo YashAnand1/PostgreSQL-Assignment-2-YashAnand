@@ -87,8 +87,8 @@ Some of the key features and difference of and between RDBMS and DBMS are as fol
    
 ## What Are Primary & Foreign Keys?
 </div>
-When it comes to maintaining a relationship between tables and uniquely identifying the data from a table, foreign key and primary keys, respectively can help us greatly in a Relational Database Management System. It should be noted that the primary key of one table is a foreign key to an another table, when it comes to forming relations of tables.                             
 
+When it comes to maintaining a relationship between tables and uniquely identifying the data from a table, foreign key and primary keys, respectively can help us greatly in a Relational Database Management System. It should be noted that the primary key of one table is a foreign key to an another table, when it comes to forming relations of tables.                             
 
 To understand better, lets assume that 2 tables called 'Brands' and 'Suppliers' have been created with 'Brand_ID' and 'Supplier_ID' as the primary keys. Additionally, the 'Suppliers' table will be containing the 'Brand_ID' from the 'Brands' table. 
 
