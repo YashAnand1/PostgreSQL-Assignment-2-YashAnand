@@ -10,7 +10,7 @@ ________________________________________________________________________________
 </div>
 <center>
 
-[What is RDBMS?](#rdbms?)                  
+[What is RDBMS?](#rdbms)                  
 What Is ACID?                      
 RDBMS vs DBMS?                        
 What Are Primary & Foreign Keys?         
@@ -104,7 +104,7 @@ In conclusion, Primary Keys help with uniquely identifying a row in the table an
 
 <div align="center">
    
-## What is Indexing?
+## What is Indexing?  <a name="indexing"></a>
 </div>
 
 Indexing can be explained as an organised reference or shortcut that allows the DBMS to locate specific rows of data without having to scan the entire table. In order to better understand this, lets first take an example of an Index of a book. In such an Index, chapters/sections are associated with a specific page number on which they can be found. For this, One needs to simply go through the list of mentioned chapters/sections and check which page number is written in front of them.   
